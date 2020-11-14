@@ -4,7 +4,7 @@
 Install-WindowsFeature Hyper-V -IncludeManagementTools -Restart
 
 $defaultLocalPath = "C:\AzureStackOnAzureVM"
-$versionContainerName = "2008.13"
+$versionContainerName = "2008-13"
 $version = $versionContainerName.split("-")[0]
 
 New-Item -Path $defaultLocalPath -ItemType Directory
