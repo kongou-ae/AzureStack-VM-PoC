@@ -30,7 +30,7 @@ New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
 
 # deploy ARM template from github using locally provided ARM template parameters
 New-AzureRmResourceGroupDeployment -Name "$resourceGroupName-PoC-Deployment" -ResourceGroupName $resourceGroupName `
-    -TemplateUri "https://raw.githubusercontent.com/yagmurs/AzureStack-VM-PoC/$gitBranch/azuredeploy.json" `
+    -TemplateUri "https://raw.githubusercontent.com/kongou-ae/AzureStack-VM-PoC/$gitBranch/azuredeploy.json" `
     -TemplateParameterObject $templateParameterObject `
     -Mode Incremental `
     -AsJob
